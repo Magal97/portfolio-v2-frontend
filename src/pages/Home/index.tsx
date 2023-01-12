@@ -24,7 +24,7 @@ const Home: React.FC = () => {
                 </ContainerIcons>
             </ContentAside>
         </Aside>
-            <div data-aos="fade-right" data-aos-easing="ease-in-out">
+            <div /* data-aos="fade-right" data-aos-easing="ease-in-out" */>
                  <h1>Welcome!</h1>
                  <h1>I'm  <span>Developer</span>.</h1>
                 <HomeParagraf>

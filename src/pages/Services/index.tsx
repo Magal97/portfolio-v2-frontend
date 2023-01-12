@@ -39,7 +39,7 @@ const Services: React.FC = () => {
             <Container>
             <TitleSection title="Services" />
             <ContentSectionServices>
-                <ServiceBox data-aos="fade-up" data-aos-easing="ease-in-out" onMouseEnter={() => toggleHoverWebBox(true)} onMouseLeave={() => toggleHoverWebBox(false)}>
+                <ServiceBox /* data-aos="fade-up" data-aos-easing="ease-in-out" */ onMouseEnter={() => toggleHoverWebBox(true)} onMouseLeave={() => toggleHoverWebBox(false)}>
                     <ContentBox>
                         <ContentBoxIconWeb isHovered={hoveredWebBox} >
                             <div/>
@@ -52,7 +52,7 @@ const Services: React.FC = () => {
                         
                     </ContentBox>    
                 </ServiceBox>
-                <ServiceBox data-aos="fade-bottom" data-aos-easing="ease-in-out" onMouseEnter={() => toggleHoverApiBox(true)} onMouseLeave={() => toggleHoverApiBox(false)}>
+                <ServiceBox /* data-aos="fade-bottom" data-aos-easing="ease-in-out" */ onMouseEnter={() => toggleHoverApiBox(true)} onMouseLeave={() => toggleHoverApiBox(false)}>
                 <ContentBox>
                         <ContentBoxIconApi isHovered={hoveredApiBox}>
                             <div/>
@@ -64,7 +64,7 @@ const Services: React.FC = () => {
                         
                 </ContentBox>    
                 </ServiceBox>
-                <ServiceBox data-aos="fade-up" data-aos-easing="ease-in-out" onMouseEnter={() => toggleHoverMobileBox(true)} onMouseLeave={() => toggleHoverMobileBox(false)}>
+                <ServiceBox /* data-aos="fade-up" data-aos-easing="ease-in-out" */ onMouseEnter={() => toggleHoverMobileBox(true)} onMouseLeave={() => toggleHoverMobileBox(false)}>
                 <ContentBox>
                         <ContentBoxIconMobile isHovered={hoveredMobileBox}>
                           <div/>

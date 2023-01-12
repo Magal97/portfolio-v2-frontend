@@ -106,7 +106,7 @@ const Contact: React.FC = () => {
       <Container>
         <TitleSection title="Contact" />
         <ContentSectionContact>
-          <InfoContact data-aos="fade-up" data-aos-easing="ease-in-out">
+          <InfoContact /* data-aos="fade-up" data-aos-easing="ease-in-out" */>
             <h2>Phone:</h2>
             <p>(11)98191-7662</p>
 
