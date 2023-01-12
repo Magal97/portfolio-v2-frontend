@@ -41,64 +41,62 @@ const HeaderComponent = () => {
 
   return (
     <Header>
-      {/* @ts-ignore */}
-      {transitions.map(({ item, key, props }) => (
-        <MenuSectionOn key={key} style={props} ishandled={menuBar}>
-          <nav>
-            <Link
-              onClick={() => handleClickLink()}
-              to="aboutme"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={1000}
-            >
-              About me
-            </Link>
-            <Link
-              onClick={() => handleClickLink()}
-              to="services"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={1000}
-            >
-              Services
-            </Link>
-            <Link
-              onClick={() => handleClickLink()}
-              to="portfolio"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={1000}
-            >
-              Portfólio
-            </Link>
-            <Link
-              onClick={() => handleClickLink()}
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={1000}
-            >
-              Contact
-            </Link>
-          </nav>
-          <ContainerIcons>
-            <a href="https://www.instagram.com/magalsz/">
-              <FiInstagram size={34} color="#e94b3cff" />
-            </a>
-            <a href="https://www.linkedin.com/in/matheus-magalh%C3%A3es-araujo/">
-              <FiLinkedin size={34} color="#e94b3cff" />
-            </a>
-            <a href="https://github.com/Magal97">
-              <FiGithub size={34} color="#e94b3cff" />
-            </a>
-          </ContainerIcons>
-        </MenuSectionOn>
-      ))}
+      <MenuSectionOn ishandled={menuBar}>
+        <nav>
+          <Link
+            onClick={() => handleClickLink()}
+            to="aboutme"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1000}
+          >
+            About me
+          </Link>
+          <Link
+            onClick={() => handleClickLink()}
+            to="services"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1000}
+          >
+            Services
+          </Link>
+          <Link
+            onClick={() => handleClickLink()}
+            to="portfolio"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1000}
+          >
+            Portfólio
+          </Link>
+          <Link
+            onClick={() => handleClickLink()}
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1000}
+          >
+            Contact
+          </Link>
+        </nav>
+        <ContainerIcons>
+          <a href="https://www.instagram.com/magalsz/">
+            <FiInstagram size={34} color="#e94b3cff" />
+          </a>
+          <a href="https://www.linkedin.com/in/matheus-magalh%C3%A3es-araujo/">
+            <FiLinkedin size={34} color="#e94b3cff" />
+          </a>
+          <a href="https://github.com/Magal97">
+            <FiGithub size={34} color="#e94b3cff" />
+          </a>
+        </ContainerIcons>
+      </MenuSectionOn>
+
       <HeaderContent ishandled={menuBar}>
         <Logo>
           <Link to="home" spy={true} smooth={true} offset={-70} duration={1000}>

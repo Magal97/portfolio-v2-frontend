@@ -51,10 +51,11 @@ const Contact: React.FC = () => {
   };
 
   const handleSubmite = () => {
-    console.log("a");
     formRef.current?.reset();
-    scrollToTop();
-
+    /* scrollToTop(); */
+    window.alert(
+      "Funcionalidade indisponível no momento, por favor me chame no numero: (11) 98191-7662"
+    );
     /* addToast({
       type: "sucess",
       title: "Alert",

@@ -15,14 +15,7 @@ const ToastContainer: React.FC<ToastContainerProps> = ({ messages }) => {
     leave: { right: "-120%" },
   });
 
-  return (
-    <Container>
-      {/* @ts-ignore */}
-      {messagesWithTransitions.map(({ item, key, props }) => (
-        <Toast key={key} message={item} style={props} />
-      ))}
-    </Container>
-  );
+  return <Container>{/* <Toast /> */}</Container>;
 };
 
 export default ToastContainer;
